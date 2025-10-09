@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/worldmap.rpy", line 131: 'text_substitute' is not a keyword argument or valid child of the textbutton statement.
+    textbutton rdisp action Function(wm_select_region, rcode) xfill True text_substitute False
+                                                                                        ^
+
+Ren'Py Version: Ren'Py 8.4.1.25072401
+Thu Oct  9 02:04:19 2025
