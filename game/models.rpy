@@ -11,6 +11,11 @@ init -20 python:
             self.cooldown = cooldown  # 재사용 대기 턴
             self.tags = set(tags or [])  # 태그 (출혈, 기절 같은 특수효과)
             self.cd_left = 0          # 현재 남은 쿨타임 턴
+        
+        #사용
+        #dep use():
+            
+
 
     # 배우(플레이어/적 공용)
     class Actor(object):

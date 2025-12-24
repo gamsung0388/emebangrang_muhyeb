@@ -18,9 +18,9 @@ init -10 python:
     # ▣ 그룹 코드 → 표기명
     # --------------------------
     store.murim_groups = {
-        "orthodox": "정파",
+        "Jung": "정파",
         "clans": "세가",
-        "unorthodox": "사파",
+        "Safa": "사파",
         "demon": "마교",
     }
 
@@ -33,8 +33,8 @@ init -10 python:
     # ---------------------------------------------------
     store.murim_factions = {
         # ========== 정파 ==========
-        "orthodox": {
-            "shaolin": {
+        "Jung": {
+            "solim": {
                 "display": "소림사",
                 "location": "하남성 등봉산",
                 "traits": ["무림 수장", "자비와 절제", "불살"],
@@ -48,7 +48,7 @@ init -10 python:
                         "relation_ids": {"사제": ["hyegong"], "연인": ["unran"]}}
                 ]
             },
-            "wudang": {
+            "mudang": {
                 "display": "무당파",
                 "location": "호북성 무당산",
                 "traits": ["선검", "조화", "유연한 내공"],
@@ -62,7 +62,7 @@ init -10 python:
                         "relation_ids": {"사제": ["zhang_san_feng"], "라이벌": ["gokun"]}}
                 ]
             },
-            "huashan": {
+            "hawshan": {
                 "display": "화산파",
                 "location": "섬서성 화산",
                 "traits": ["검법 중심", "협의와 의협심"],
@@ -76,7 +76,7 @@ init -10 python:
                         "relation_ids": {"연인": ["unran"], "원수": ["muryong_hwan"]}}
                 ]
             },
-            "kongtong": {
+            "kongdong": {
                 "display": "공동파",
                 "location": "감숙성 평량 공동산",
                 "traits": ["광성자 전통", "심법 중심"],
@@ -106,7 +106,7 @@ init -10 python:
                         "relation_ids": {"연인": ["jegal_seol"], "원수": ["muryong_yeon"]}}
                 ]
             },
-            "tang_sichuan": {
+            "sachun": {
                 "display": "사천당가",
                 "location": "사천성",
                 "traits": ["독공과 암기", "폐쇄적"],
@@ -114,10 +114,10 @@ init -10 python:
                 "treasure": ["만독단경"],
                 "event": "정사대전, 독공유출",
                 "notable": [
-                    {"id": "tang_mulim", "name": "당무림", "role": "가주",
-                        "relation_ids": {"제자": ["tang_okjin"], "원수": ["blood_king"]}},
-                    {"id": "tang_okjin", "name": "당옥진", "role": "여독사",
-                        "relation_ids": {"연인": ["namgung_yeon"], "스승": ["tang_mulim"]}}
+                    {"id": "dang_mulim", "name": "당무림", "role": "가주",
+                        "relation_ids": {"제자": ["dang_okjin"], "원수": ["blood_king"]}},
+                    {"id": "dang_okjin", "name": "당옥진", "role": "여독사",
+                        "relation_ids": {"연인": ["namgung_yeon"], "스승": ["dang_mulim"]}}
                 ]
             },
             "jegal": {
@@ -151,7 +151,7 @@ init -10 python:
         },
 
         # ========== 사파 ==========
-        "unorthodox": {
+        "Safa": {
             "haomen": {
                 "display": "하오문",
                 "location": "중원 암부",
@@ -193,7 +193,7 @@ init -10 python:
                     {"id": "ma_hon", "name": "마혼", "role": "좌사",
                         "relation_ids": {"스승": ["cheonma"], "원수": ["gongmyeong"]}},
                     {"id": "ma_wolryeong", "name": "마월령", "role": "마녀",
-                        "relation_ids": {"라이벌": ["tang_okjin"], "연인": ["namgung_yeon"]}}
+                        "relation_ids": {"라이벌": ["dang_okjin"], "연인": ["namgung_yeon"]}}
                 ]
             },
             "blood_cult": {
@@ -205,7 +205,7 @@ init -10 python:
                 "event": "혈겁, 정토대전",
                 "notable": [
                     {"id": "blood_king", "name": "혈왕", "role": "교주",
-                        "relation_ids": {"원수": ["zhang_san_feng", "tang_mulim"]}}
+                        "relation_ids": {"원수": ["zhang_san_feng", "dang_mulim"]}}
                 ]
             }
         }
@@ -216,10 +216,10 @@ init -10 python:
     # ---------------------------------------------
     store.murim_worldmap = {
         "hebei":   {"display": "하북", "factions": ["namgung", "green_forest"]},
-        "henan":   {"display": "하남", "factions": ["shaolin"]},
-        "hubei":   {"display": "호북", "factions": ["wudang"]},
-        "sichuan": {"display": "사천", "factions": ["tang_sichuan"]},
-        "shanxi":  {"display": "섬서", "factions": ["huashan", "kongtong", "jegal"]},
+        "henan":   {"display": "하남", "factions": ["solim"]},
+        "hubei":   {"display": "호북", "factions": ["mudang"]},
+        "sichuan": {"display": "사천", "factions": ["sachun"]},
+        "shanxi":  {"display": "섬서", "factions": ["hawshan", "kongdong", "jegal"]},
         "liaoning":{"display": "요녕", "factions": ["muryong"]},
         "ten_thousand_mountains": {"display": "십만대산", "factions": ["cheonma_sect"]},
         "southwest_blood": {"display": "서남혈계", "factions": ["blood_cult"]}

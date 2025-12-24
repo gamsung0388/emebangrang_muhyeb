@@ -2,9 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/worldmap.rpy", line 131: 'text_substitute' is not a keyword argument or valid child of the textbutton statement.
-    textbutton rdisp action Function(wm_select_region, rcode) xfill True text_substitute False
-                                                                                        ^
+File "game/10_relationship.rpy", line 151: 'action' is not a keyword argument or valid child of the for statement.
+    action SetScreenVariable("_selected_char", ch.id)
+          ^
 
-Ren'Py Version: Ren'Py 8.4.1.25072401
-Thu Oct  9 02:04:19 2025
+Ren'Py Version: Ren'Py 8.3.4.24120703
+Wed Dec 24 23:39:27 2025

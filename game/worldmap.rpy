@@ -10,7 +10,7 @@
 # =========================================================
 
 init python:
-
+    
     # 화면 상태 저장용 (간단한 state dict)
     if not hasattr(store, "wm_state"):
         store.wm_state = {"region": None, "faction": None}

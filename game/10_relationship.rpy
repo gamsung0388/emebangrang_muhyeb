@@ -147,8 +147,7 @@ screen relationship_screen(preselect_faction=None):
                             text "등록된 인물이 없습니다." color "#ddd" substitute False
                         else:
                             for ch in lst:
-                                textbutton Text("• " + ch.name + "  (" + ch.role + ")", substitute=False) \
-                                    action SetScreenVariable("_selected_char", ch.id)
+                                textbutton Text(" " + ch.name + "  (" + ch.role + ")", substitute=False) action SetScreenVariable("_selected_char", ch.id)
 
     frame:
         background Solid("#111c")
